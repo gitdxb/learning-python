@@ -1,8 +1,9 @@
+
 from requests import session
 import re
 s=session()
-email= 'hoangminhdung'
-DL=s.get('https://signup.live.com/signup?username='+email+'@hotmail.com&lic=1')
+email= ''
+DL=s.get('')
 # print(DL.text)
 
 kq=re.search("isAvailable",DL.text)
