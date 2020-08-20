@@ -67,3 +67,9 @@ for i in range(len(a)):
         if(n == len(b)):
             is_sub_list = True
 print(is_sub_list)
+
+#Continue condition
+for i in rang(1,11):
+    if i % 2 == 0:
+        continue
+    print(i)
