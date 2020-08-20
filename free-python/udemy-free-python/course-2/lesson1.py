@@ -178,3 +178,30 @@ data = ["abc", "basda", "cefd","da","e"]
 result = list(sorted(data, key=len, reverse=True))
 
 print(result)
+
+#Lists in list
+list = [['aplle', 'banana'], ['milk', 'butter'], ['cherries, carrots']]
+print(list)
+
+#methods can be used: append(), del, list[index]...etc
+
+
+#DICTONARIES
+dict = {'apple': 'green', 'banana': 5, 1: 15}
+
+#methods can be used
+dict[1] += 1
+dict[2] = 10
+
+print(dict)
+print(dict.keys())
+print(dict.values())
+print(dict['apple'])
+print(dict[1])
+
+del dict['apple']
+print(dict)
+
+
+
+####
