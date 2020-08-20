@@ -204,4 +204,32 @@ print(dict)
 
 
 
-####
+#### tuples
+tup = (1,2,3,4,"Johnson",[1,2,3,4])
+print(tup)
+
+##tuples can't be changed, delete, but if there is list in tuple , it can be changed, example:
+tup[5].append(5)
+print(tup)   #(1, 2, 3, 4, 'Johnson', [1, 2, 3, 4, 5])
+
+###Set, it can store duplicate value but print out not duplicated items, it can not indexing
+
+_set = {1,2,2,3,4,5,7,8,8,3423,234}
+
+
+_set.add(100)
+_set.pop()
+print(_set)
+print(_set.pop())
+
+
+### Change a list to set
+
+_list = [1,2,23,2,2,5,5,4,6,7,2342,23]
+
+print(_list)
+a = set(_list)  #assign list to become a set type then print
+print(a) #no duplication
+_list = list(a)  #turn set assign to a become a list again but no dup
+
+print(_list)
