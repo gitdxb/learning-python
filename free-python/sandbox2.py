@@ -22,8 +22,8 @@ def addtwo(a,b):
     return added
 x = addtwo(2,3)
 #print(x)
-get_hours = input("Enter hours: ")
-get_rate = input("Enter rate: ")
+#get_hours = input("Enter hours: ")
+#get_rate = input("Enter rate: ")
 try:
 
     hours = float(get_hours)
@@ -52,7 +52,9 @@ def greet(lang):
         return 'Hello'
 
 
-print(greet('fr'), 'Sally')
-
-
-
+while True:
+    line=input('> ')
+    if line=='done':
+        break
+    print(line)
+print('Done!')
