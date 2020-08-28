@@ -6,12 +6,24 @@
 5. Extract the floating point
 6. Compute average
 '''
-fhandle = input('Enter a file: ')
-fread = open(fhandle)
-count = 0
-for i in fread:
-    i = i.rstrip()
-    if i.startswith('X-DSPAM-Confidence:'):
-        count += 1
-        print(i)
-print(count)
+while True:
+    fhandle = input('Enter a file: ')
+    try:
+        fread = open(fhandle)
+    except:
+        print('Please input valid file ')
+        continue
+    count = 0
+    total = 0
+    #ls = []
+    for i in fread:
+        i = i.rstrip()
+        if i.startswith('X-DSPAM-Confidence:'):
+            count += 1
+            for item in i:
+                item = i.find(':')
+                get_float = float(i[item+1:])
+            total = total + get_float
+            #ls.append(get_float)
+
+    print('Average spam confidence:',total/count)
