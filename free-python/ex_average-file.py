@@ -24,6 +24,4 @@ while True:
                 item = i.find(':')
                 get_float = float(i[item+1:])
             total = total + get_float
-            #ls.append(get_float)
-
     print('Average spam confidence:',total/count)
