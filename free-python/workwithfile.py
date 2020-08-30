@@ -40,4 +40,3 @@ while True:
         if _list.startswith('Subject: '):
              count += 1
     print('There are',count,'subject lines in your file')
-
