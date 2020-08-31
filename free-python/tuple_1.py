@@ -20,6 +20,5 @@ res = list()
 for length, word in lst :
     res.append(word)
 print(res)
-print('Longest word: ', res[0])
-print('Shortest word: ', res[-1])
+
 
