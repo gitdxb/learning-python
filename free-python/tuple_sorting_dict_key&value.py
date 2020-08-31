@@ -2,6 +2,7 @@
 print('Sorting with keys in dictionary: \n')
 d = {'a':10,'c':22,'b':1}
 t = sorted(d.items())
+#Or t = list(d.items()), t.sort()
 print('Before: ',t)
 
 for length,word in t:
