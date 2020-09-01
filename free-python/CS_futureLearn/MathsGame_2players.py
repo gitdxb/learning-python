@@ -1,5 +1,5 @@
 try:
-    print('The 10 highest scores previously were')
+    print('The 10 highest scores previously were:')
     with open('highscore.txt','r') as f:
         highscore = f.read()
         print(highscore)
@@ -12,7 +12,7 @@ finish = False
 while finish == False:
     scores = []
     names = []
-    score = 0
+
     with open('highscore.txt','r') as file:
         for line in file:
             line = line.strip('\n')
@@ -20,6 +20,8 @@ while finish == False:
             names.append(line[0])
             scores.append(int(line[1]))
     # Q1,2,3
+        score = 0
+        name = input('Enter player name: ')
 
         print('Welome to the Maths Quiz')
         print('Can you answer three questions and score maximum points?')
@@ -30,10 +32,8 @@ while finish == False:
         if x == 8:
             print('Correct!')
             score += 1
-            print('Your score is ', score)
         else:
             print('Incorrect, try again!')
-            print('Your score is ', score)
 
     # Q2
         print('\nWhat is 1 + 1?')
@@ -42,10 +42,8 @@ while finish == False:
         if x2 == 2:
             print('Correct!')
             score += 1
-            print('Your score is ', score)
         else:
             print('Incorrect, try again!')
-            print('Your score is ', score)
 
     # Q3
         print('\nWhat is 1 + 2?')
@@ -67,7 +65,6 @@ while finish == False:
             position += 1
     scores.insert(position, score)
     names.insert(position, name)
-    # print highscore
     print("HIGHSCORES")
     with open("highscore.txt", 'w') as file:
         for i in range(len(scores)):
