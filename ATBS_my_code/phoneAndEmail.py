@@ -31,7 +31,7 @@ for groups in phoneRegex.findall(text):
     matches.append(phoneNum)
 for groups in emailRegex.findall(text):
     matches.append(groups[0])
-print("This is what matches: ", matches)
+#print("This is what matches: ", matches)
 
 # Copy results to clipboard
 if len(matches) > 0:
